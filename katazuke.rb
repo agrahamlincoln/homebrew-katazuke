@@ -12,7 +12,11 @@ class Katazuke < Formula
   end
 
   def install
-    bin.install "katazuke"
+    if OS.mac?
+      bin.install "katazuke-darwin-arm64" => "katazuke"
+    elsif OS.linux?
+      bin.install "katazuke-linux-amd64" => "katazuke"
+    end
   end
 
   test do
