@@ -1,14 +1,14 @@
 class Katazuke < Formula
   desc "Developer workspace maintenance tool for tidying up git repositories"
   homepage "https://github.com/agrahamlincoln/katazuke"
-  version "0.4.0"
+  version "0.5.0"
 
   if OS.mac?
-    url "https://github.com/agrahamlincoln/katazuke/releases/download/v0.4.0/katazuke-0.4.0-darwin-arm64.tar.gz"
-    sha256 "7792ffe879d9fcbf78899dddcb5d2f99eb722b6a1628a0600070aa16676214eb"
+    url "https://github.com/agrahamlincoln/katazuke/releases/download/v0.5.0/katazuke-0.5.0-darwin-arm64.tar.gz"
+    sha256 "42e2d3b60a14061e66200294390b6b740a7985149403019ab97f5d2d694abc10"
   elsif OS.linux?
-    url "https://github.com/agrahamlincoln/katazuke/releases/download/v0.4.0/katazuke-0.4.0-linux-amd64.tar.gz"
-    sha256 "608e9e6dcfa4538da7eaafa08b93f2c010d67db07f48e1aabd170aa8b7555700"
+    url "https://github.com/agrahamlincoln/katazuke/releases/download/v0.5.0/katazuke-0.5.0-linux-amd64.tar.gz"
+    sha256 "5db2d6869d274a025b3c0a324148fdf516b4f35f7f67684c64bd4388423844f6"
   end
 
   def install
